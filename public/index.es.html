@@ -22,6 +22,8 @@
       .datum.yellow { background-color: #f1c40f; color: #fff; }
       .datum.blue { background-color: #3498db; color: #fff; }
       .datum.purple { background-color: #9b59b6; color: #fff; }
+      .datum.gray { background-color: #9b59b6; color: #fff; }
+
       /** Small devices **/
       @media only screen and (max-width: 640px) {
         .datum { width: 98.5%; }
@@ -68,6 +70,18 @@
         <span class="label">Dirección del viento</span>
         <span class="value wind-direction">---</span>
       </div>
+
+
+      <div class="datum blue">
+        <span class="label">Lluvias</span>
+        <span class="value"><span class="rain">-</span> <span class="unit">mm</span></span>
+      </div>
+
+      <div class="datum blue">
+        <span class="label">Promedio de Lluvias</span>
+        <span class="value"><span class="rain-rate">-</span> <span class="unit">mm</span></span>
+      </div>
+
     </div>
   </body>
   <script type="text/javascript" src="js/getData.js"></script>  
