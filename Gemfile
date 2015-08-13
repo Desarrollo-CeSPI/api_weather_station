@@ -13,6 +13,6 @@ gem 'puma'
 gem "rake"
 gem "sinatra", require: "sinatra/base"
 gem "sinatra-contrib", require: 'sinatra/contrib'
-gem "sinatra-activerecord", require: 'sinatra/activerecord'
+gem "sinatra-activerecord", '~> 1.2.3', require: 'sinatra/activerecord'
 gem "tilt-jbuilder", require: "sinatra/jbuilder"
 gem "mysql2"
