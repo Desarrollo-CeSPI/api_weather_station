@@ -11,11 +11,9 @@ set :deploy_via,            :remote_cache
 set :keep_releases,         10
 set :use_sudo,              false
 
-set :shared_children,       %w{ log
-                                tmp }
+set :shared_children,       %w{ log tmp }
 
-set :shared_files,          %w{ config/database.yml
-                                config/puma.rb }
+set :shared_files,          %w{ config/database.yml config/puma.rb }
 
 set :deploy_to,   "/opt/#{application}"
 set :user,        application
