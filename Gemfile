@@ -1,8 +1,8 @@
 # A sample Gemfile
 source "https://rubygems.org"
+
 group :development do
-  gem "rerun"
-  gem 'capistrano'
+  gem 'capistrano', '~> 2.0'
   gem 'capistrano-rbenv'
   gem 'capistrano-shared_file'
 end
