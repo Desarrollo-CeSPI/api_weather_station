@@ -22,4 +22,5 @@ server domain,    :app, :web, :db, primary: true
 
 after :deploy do
   run "if [ ! -d #{shared_path}/tmp/pids ]; then mkdir #{shared_path}/tmp/pids && chmod 0777 #{shared_path}/tmp/pids; fi"
+  run "ln -sf #{current_path}/public/index.es.html #{current_path}/public/index.html"
 end
