@@ -13,7 +13,9 @@
             windSpeed: $target.find('.wind-speed'),
             windDirection: $target.find('.wind-direction'),
             rain: $target.find('.rain'),
-            rainRate: $target.find('.rain-rate')
+            rainRate: $target.find('.rain-rate'),
+            uv: $target.find('.uv'),
+            windChill: $target.find('.wind-chill')
           };
         }($('#content'))),
         intervalId;
@@ -39,6 +41,8 @@
             $parts.bar.html(data.bar);
             $parts.windSpeed.html(data.wind_speed);
             $parts.windDirection.html(data.wind_direction);
+            $parts.windChill.html(data.wind_chill);
+            $parts.uv.html(data.uv);
             $parts.rain.html(data.rain);
             $parts.rainRate.html(data.rain_rate);
           });
